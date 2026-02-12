@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - ARTEA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="admin-container">
+        <!-- Login Card -->
+        <div class="login-card" id="loginCard">
+            <h2 style="text-align: center; margin-bottom: 32px; color: var(--primary);">🎨 Admin Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" id="username" required autocomplete="username">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="password" required autocomplete="current-password">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+                </div>
+                <p id="loginError" style="color: #dc2626; text-align: center; margin-top: 16px; display: none; font-weight: 500;">Invalid credentials</p>
+            </form>
+        </div>
+
+        <!-- Admin Panel -->
+        <div class="admin-panel" id="adminPanel" style="display: none;">
+            <div class="admin-header">
+                <div>
+                    <h2 style="margin-bottom: 8px;">Portfolio Management</h2>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0;">Manage your artwork collection</p>
+                </div>
+                <div style="display: flex; gap: 12px;">
+                    <button class="btn btn-primary btn-small" id="addNewBtn">+ Add New</button>
+                    <button class="btn btn-outline btn-small" id="logoutBtn">Logout</button>
+                </div>
+            </div>
+
+            <div class="portfolio-list" id="portfolioList">
+                <!-- Portfolio items loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Add/Edit Modal -->
+    <div class="modal" id="portfolioModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Add Portfolio Item</h3>
+                <button class="close-modal" id="closeModal">×</button>
+            </div>
+            <form id="portfolioForm">
+                <input type="hidden" id="editId">
+                <div class="form-group">
+                    <label>Title (English)</label>
+                    <input type="text" id="titleEn" required>
+                </div>
+                <div class="form-group">
+                    <label>Title (Arabic)</label>
+                    <input type="text" id="titleAr" required>
+                </div>
+                <div class="form-group">
+                    <label>Category (English)</label>
+                    <input type="text" id="categoryEn" placeholder="e.g., Oil Painting" required>
+                </div>
+                <div class="form-group">
+                    <label>Category (Arabic)</label>
+                    <input type="text" id="categoryAr" placeholder="e.g., رسم زيتي" required>
+                </div>
+                <div class="form-group">
+                    <label>Image URL</label>
+                    <input type="text" id="imageUrl" placeholder="images/img1.jpg" required>
+                    <small style="color: var(--text-muted); font-size: 0.85rem; margin-top: 4px; display: block;">Available: img1.jpg - img8.jpg</small>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARTEA - Jassem React | Professional Realistic Portrait Artist</title>
+    <meta name="description" content="Professional realistic portrait artist with 10 years of experience. Specialized in handmade artwork, custom portraits, and graffiti.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">ARTEA</a>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                <li><a href="#about" data-en="About" data-ar="عني">About</a></li>
+                <li><a href="#services" data-en="Services" data-ar="الخدمات">Services</a></li>
+                <li><a href="#portfolio" data-en="Portfolio" data-ar="المعرض">Portfolio</a></li>
+                <li><a href="#faq" data-en="FAQ" data-ar="الأسئلة">FAQ</a></li>
+                <li><a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a></li>
+            </ul>
+            
+            <div style="display: flex; align-items: center; gap: 16px;">
+                <div class="theme-toggle" id="themeToggle">
+                    <div class="theme-toggle-slider">🌙</div>
+                </div>
+                
+                <div class="lang-toggle">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="ar">AR</button>
+                </div>
+                
+                <div class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="hero-subtitle" data-en="REALISTIC PORTRAIT ARTIST" data-ar="فنان البورتريه الواقعي">REALISTIC PORTRAIT ARTIST</p>
+            <h1 data-en="ARTEA" data-ar="ARTEA">ARTEA</h1>
+            <p data-en="Bringing life to canvas through 10 years of mastery in realistic portrait art. Creating timeless pieces that capture emotion and personality." data-ar="إحياء الحياة على القماش من خلال 10 سنوات من الإتقان في فن البورتريه الواقعي.">Bringing life to canvas through 10 years of mastery in realistic portrait art. Creating timeless pieces that capture emotion and personality.</p>
+            <div class="cta-buttons">
+                <a href="#portfolio" class="btn btn-primary" data-en="View Portfolio" data-ar="عرض المعرض">View Portfolio</a>
+                <a href="#contact" class="btn btn-outline" data-en="Get in Touch" data-ar="تواصل معي">Get in Touch</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat-item">
+                    <div class="hero-stat-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="hero-stat-text">
+                        <h4>500+</h4>
+                        <p data-en="Portraits Delivered" data-ar="بورتريه منجز">Portraits Delivered</p>
+                    </div>
+                </div>
+                <div class="hero-stat-item">
+                    <div class="hero-stat-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="hero-stat-text">
+                        <h4 data-en="Excellence" data-ar="التميز">Excellence</h4>
+                        <p data-en="Worldwide in realism" data-ar="عالميًا في الواقعية">Worldwide in realism</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image-container">
+            <div class="hero-image-card">
+                <img src="images/img9.jpg" alt="Jassem React - Featured Artist">
+                <div class="hero-image-label">
+                    <h4 data-en="The Silent Reflection, 2023" data-ar="التأمل الصامت، 2023">The Silent Reflection, 2023</h4>
+                    <p><i class="fas fa-brush"></i> <span data-en="Oil on Canvas" data-ar="زيت على قماش">Oil on Canvas</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll-indicator">
+            <span data-en="SCROLL" data-ar="تمرير">SCROLL</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image fade-in">
+                    <img src="images/img5.jpg" alt="Jassem React - Artist">
+                </div>
+                <div class="about-content fade-in">
+                    <p class="section-label" data-en="ABOUT THE ARTIST" data-ar="عن الفنان">ABOUT THE ARTIST</p>
+                    <h2 data-en="Jassem React" data-ar="جاسم رياكت">Jassem React</h2>
+                    <p data-en="With a decade of dedication to the craft of realistic portraiture, I transform moments into timeless art. My work spans from intimate pencil sketches to grand oil paintings, each piece a testament to patience, precision, and passion." data-ar="مع عقد من التفاني لحرفة الرسم الواقعي، أحول اللحظات إلى فن خالد. يمتد عملي من الرسومات الحميمة بالقلم الرصاص إلى اللوحات الزيتية الكبيرة.">With a decade of dedication to the craft of realistic portraiture, I transform moments into timeless art. My work spans from intimate pencil sketches to grand oil paintings, each piece a testament to patience, precision, and passion.</p>
+                    <p data-en="Based in El Oued, Algeria, my artistic journey has been recognized nationally and internationally with multiple awards and exhibitions. I specialize in custom commissioned portraits, handmade artwork, and large-scale graffiti murals." data-ar="مقره في الوادي، الجزائر، تم الاعتراف برحلتي الفنية على المستوى الوطني والدولي مع جوائز ومعارض متعددة.">Based in El Oued, Algeria, my artistic journey has been recognized nationally and internationally with multiple awards and exhibitions. I specialize in custom commissioned portraits, handmade artwork, and large-scale graffiti murals.</p>
+                    
+                    <div class="achievements">
+                        <div class="achievement-item">
+                            <strong>10+</strong>
+                            <span data-en="Years Experience" data-ar="سنوات الخبرة">Years Experience</span>
+                        </div>
+                        <div class="achievement-item">
+                            <strong>1st</strong>
+                            <span data-en="Algiers & Bouira" data-ar="الجزائر والبويرة">Algiers & Bouira</span>
+                        </div>
+                        <div class="achievement-item">
+                            <strong>2nd</strong>
+                            <span data-en="Tebessa 2025" data-ar="تبسة 2025">Tebessa 2025</span>
+                        </div>
+                        <div class="achievement-item">
+                            <strong>International</strong>
+                            <span data-en="Tunisia Exhibition" data-ar="معرض تونس">Tunisia Exhibition</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label" data-en="WHAT I OFFER" data-ar="ما أقدمه">WHAT I OFFER</p>
+                <h2 data-en="Services" data-ar="الخدمات">Services</h2>
+                <p data-en="Professional artistic services tailored to bring your vision to life with precision and passion" data-ar="خدمات فنية احترافية مصممة خصيصًا لرؤيتك واحتياجاتك">Professional artistic services tailored to bring your vision to life with precision and passion</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <i class="fas fa-palette service-icon"></i>
+                    <h3 data-en="Custom Portraits" data-ar="بورتريهات مخصصة">Custom Portraits</h3>
+                    <p data-en="Handcrafted realistic portraits that capture the true essence, personality, and emotion of every subject" data-ar="بورتريهات واقعية مصنوعة يدويًا تلتقط الشخصية والعاطفة">Handcrafted realistic portraits that capture the true essence, personality, and emotion of every subject</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> <span data-en="Pencil & Charcoal" data-ar="قلم رصاص وفحم">Pencil & Charcoal</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-en="Colored Pencils" data-ar="أقلام ملونة">Colored Pencils</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-en="Oil Painting" data-ar="رسم زيتي">Oil Painting</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-en="All Sizes Available" data-ar="جميع الأحجام">All Sizes Available</span></li>
+                    </ul>
+                </div>
+
+                <div class="service-card fade-in">
+                    <i class="fas fa-spray-can service-icon"></i>
+                    <h3 data-en="Graffiti & Murals" data-ar="الجرافيتي واللوحات الجدارية">Graffiti & Murals</h3>
+                    <p data-en="Large-scale artistic murals and graffiti for transforming spaces into captivating visual experiences" data-ar="لوحات جدارية فنية كبيرة الحجم للمساحات والفعاليات">Large-scale artistic murals and graffiti for transforming spaces into captivating visual experiences</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> <span data-en="Wall Murals" data-ar="جداريات حائطية">Wall Murals</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-en="Commercial Spaces" data-ar="المساحات التجارية">Commercial Spaces</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-en="Event Backdrops" data-ar="خلفيات الأحداث">Event Backdrops</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-en="Custom Designs" data-ar="تصاميم مخصصة">Custom Designs</span></li>
+                    </ul>
+                </div>
+
+                <div class="service-card fade-in">
+                    <i class="fas fa-crown service-icon"></i>
+                    <h3 data-en="Commission Work" data-ar="أعمال مخصصة">Commission Work</h3>
+                    <p data-en="Personalized artwork created specifically to match your vision and exceed your expectations" data-ar="عمل فني شخصي تم إنشاؤه خصيصًا لرؤيتك">Personalized artwork created specifically to match your vision and exceed your expectations</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> <span data-en="Family Portraits" data-ar="صور عائلية">Family Portraits</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-en="Celebrity Athletes" data-ar="الرياضيون المشهورون">Celebrity Athletes</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-en="Historical Figures" data-ar="الشخصيات التاريخية">Historical Figures</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-en="Pet Portraits" data-ar="صور الحيوانات الأليفة">Pet Portraits</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label" data-en="FEATURED WORK" data-ar="الأعمال المميزة">FEATURED WORK</p>
+                <h2 data-en="Portfolio" data-ar="معرض الأعمال">Portfolio</h2>
+                <p data-en="A curated selection showcasing the depth, versatility, and mastery of realistic portrait art" data-ar="مجموعة مختارة تعرض عمق وتنوع فن البورتريه الواقعي">A curated selection showcasing the depth, versatility, and mastery of realistic portrait art</p>
+            </div>
+            
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- Portfolio items loaded by JavaScript -->
+            </div>
+            
+            <div class="view-all-container">
+                <a href="gallery.html" class="btn btn-primary">
+                    <i class="fas fa-th"></i>
+                    <span data-en="View All Work" data-ar="عرض جميع الأعمال">View All Work</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label" data-en="HAVE QUESTIONS?" data-ar="لديك أسئلة؟">HAVE QUESTIONS?</p>
+                <h2 data-en="Frequently Asked Questions" data-ar="الأسئلة الشائعة">Frequently Asked Questions</h2>
+                <p data-en="Everything you need to know about commissioning artwork and the creative process" data-ar="كل ما تحتاج لمعرفته حول طلب عمل فني">Everything you need to know about commissioning artwork and the creative process</p>
+            </div>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span data-en="How long does a commission take?" data-ar="كم يستغرق العمل المخصص؟">How long does a commission take?</span>
+                        <div class="faq-icon"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content" data-en="Typically, a portrait takes 2-4 weeks depending on size and complexity. Oil paintings may require additional drying time. Rush orders can be accommodated with prior discussion." data-ar="عادةً، يستغرق البورتريه من 2 إلى 4 أسابيع حسب الحجم والتعقيد. قد تتطلب اللوحات الزيتية وقتًا إضافيًا للتجفيف.">Typically, a portrait takes 2-4 weeks depending on size and complexity. Oil paintings may require additional drying time. Rush orders can be accommodated with prior discussion.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span data-en="What do I need to provide?" data-ar="ما الذي أحتاج لتوفيره؟">What do I need to provide?</span>
+                        <div class="faq-icon"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content" data-en="High-quality reference photos are essential. For best results, provide clear, well-lit images from multiple angles. We'll discuss your vision, preferred size, and medium during consultation." data-ar="الصور المرجعية عالية الجودة ضرورية. للحصول على أفضل النتائج، قدم صورًا واضحة ومضاءة جيدًا من زوايا متعددة.">High-quality reference photos are essential. For best results, provide clear, well-lit images from multiple angles. We'll discuss your vision, preferred size, and medium during consultation.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span data-en="What are your rates?" data-ar="ما هي الأسعار؟">What are your rates?</span>
+                        <div class="faq-icon"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content" data-en="Pricing varies based on size, medium, complexity, and timeline. A4 pencil portraits start from competitive rates, while larger oil paintings are quoted individually. Contact me for a personalized quote." data-ar="تختلف الأسعار بناءً على الحجم والوسط والتعقيد والجدول الزمني. تبدأ صور A4 بالقلم الرصاص بأسعار تنافسية.">Pricing varies based on size, medium, complexity, and timeline. A4 pencil portraits start from competitive rates, while larger oil paintings are quoted individually. Contact me for a personalized quote.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span data-en="Do you ship internationally?" data-ar="هل تشحن دوليًا؟">Do you ship internationally?</span>
+                        <div class="faq-icon"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content" data-en="Yes! I can ship completed artworks internationally with secure packaging. Local delivery is available within Algeria. Shipping costs and methods will be discussed before finalizing your order." data-ar="نعم! يمكنني شحن الأعمال الفنية المكتملة دوليًا مع التغليف الآمن. التسليم المحلي متاح داخل الجزائر.">Yes! I can ship completed artworks internationally with secure packaging. Local delivery is available within Algeria. Shipping costs and methods will be discussed before finalizing your order.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span data-en="Can I see progress updates?" data-ar="هل يمكنني رؤية تحديثات التقدم؟">Can I see progress updates?</span>
+                        <div class="faq-icon"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content" data-en="Absolutely! I provide regular progress photos throughout the creation process. You'll have opportunities to request adjustments during key stages to ensure the final piece matches your vision perfectly." data-ar="بالتأكيد! أقدم صورًا منتظمة للتقدم طوال عملية الإنشاء. ستتاح لك فرص لطلب التعديلات خلال المراحل الرئيسية.">Absolutely! I provide regular progress photos throughout the creation process. You'll have opportunities to request adjustments during key stages to ensure the final piece matches your vision perfectly.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info fade-in">
+                    <p class="section-label" data-en="GET IN TOUCH" data-ar="تواصل معي">GET IN TOUCH</p>
+                    <h2 data-en="Let's Create Together" data-ar="لنبدع معًا">Let's Create Together</h2>
+                    <p data-en="Ready to commission a portrait or discuss a creative project? I'd love to hear from you and bring your vision to life." data-ar="هل أنت مستعد لطلب بورتريه أو مناقشة مشروع؟ أود أن أسمع منك.">Ready to commission a portrait or discuss a creative project? I'd love to hear from you and bring your vision to life.</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-details">
+                            <h4 data-en="Email" data-ar="البريد الإلكتروني">Email</h4>
+                            <a href="mailto:doudijassem45@gmail.com">doudijassem45@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                        <div class="contact-details">
+                            <h4 data-en="WhatsApp" data-ar="واتساب">WhatsApp</h4>
+                            <a href="https://wa.me/213658423892" target="_blank">+213 658 423 892</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-details">
+                            <h4 data-en="Location" data-ar="الموقع">Location</h4>
+                            <p style="margin: 0; color: var(--text-secondary);">El Oued, Algeria</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form fade-in">
+                    <div class="form-success" id="formSuccess">
+                        <i class="fas fa-check-circle"></i>
+                        <span data-en="Message sent successfully! I'll get back to you soon." data-ar="تم إرسال الرسالة بنجاح! سأعاود الاتصال بك قريبًا.">Message sent successfully! I'll get back to you soon.</span>
+                    </div>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label data-en="Your Name" data-ar="الاسم">Your Name</label>
+                            <input type="text" name="name" id="contactName" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label data-en="Email Address" data-ar="البريد الإلكتروني">Email Address</label>
+                            <input type="email" name="email" id="contactEmail" required placeholder="your.email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label data-en="Your Message" data-ar="الرسالة">Your Message</label>
+                            <textarea name="message" id="contactMessage" required placeholder="Tell me about your project or inquiry..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                                <span data-en="Send Message" data-ar="إرسال الرسالة">Send Message</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">ARTEA</div>
+                    <p data-en="Creating timeless realistic portraits and artwork that capture the essence of every subject. Based in El Oued, Algeria." data-ar="إنشاء بورتريهات واقعية خالدة تجسد جوهر كل موضوع. مقرها في الوادي، الجزائر.">Creating timeless realistic portraits and artwork that capture the essence of every subject. Based in El Oued, Algeria.</p>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://www.instagram.com/jassem.react999" target="_blank" title="Instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/213658423892" target="_blank" title="WhatsApp" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="mailto:doudijassem45@gmail.com" title="Email" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://facebook.com" target="_blank" title="Facebook" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>
+                    <i class="fas fa-copyright"></i>
+                    <span data-en="2026 ARTEA - Jassem React. All rights reserved." data-ar="2026 ARTEA - جاسم رياكت. جميع الحقوق محفوظة.">2026 ARTEA - Jassem React. All rights reserved.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div class="image-modal" id="imageModal">
+        <div class="modal-close" id="modalClose">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="modal-prev modal-nav" id="modalPrev">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="modal-next modal-nav" id="modalNext">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="image-modal-content">
+            <img src="" alt="" id="modalImage">
+            <div class="image-modal-info">
+                <h3 id="modalTitle"></h3>
+                <p id="modalCategory"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
